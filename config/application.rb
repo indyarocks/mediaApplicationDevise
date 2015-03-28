@@ -22,5 +22,11 @@ module MediaApplicationDevise
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    config.generators do |g|
+      g.test_framework  :rspec
+      g.integration_tool :rspec
+      g.fixture_replacement :factory_girl
+    end
   end
 end

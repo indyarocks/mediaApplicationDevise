@@ -45,7 +45,10 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
 
   gem 'rspec-rails'
-  gem 'factory_girl_rails', "~> 4.2.1"
+  gem 'pry'
+  gem 'pry-doc'
+  gem 'factory_girl', "~> 4.4.0"
+  gem 'factory_girl_rails', "~> 4.4.0", :require => false
   gem 'diff-lcs'
   gem 'spork-rails'
   gem 'guard-spork'
